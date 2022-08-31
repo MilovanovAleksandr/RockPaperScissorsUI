@@ -23,7 +23,7 @@
 
         <Label Content="ИГРА: КАМЕНЬ, НОЖНИЦЫ, БУМАГА (Сделайте свой выбор)" FontSize="13" FontStyle="Italic"  FontStretch="Expanded"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
 
-        <Button x:Name="rockBtn" Grid.Row="1" Grid.Column="0" Margin="5">
+        <Button x:Name="rockBtn" Grid.Row="1" Grid.Column="0" Margin="5" Click="rockBtn_Click">
             <Grid Margin="5">
                 <Grid.RowDefinitions>
                     <RowDefinition />
