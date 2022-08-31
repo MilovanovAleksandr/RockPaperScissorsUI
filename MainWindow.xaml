@@ -21,7 +21,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Label Content="ИГРА: КАМЕНЬ, НОЖНИЦЫ, БУМАГА (Сделайте свой выбор)" FontSize="13" FontStyle="Italic"  FontStretch="Expanded"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
+        <Label Content="ИГРА: КАМЕНЬ, НОЖНИЦЫ, БУМАГА" FontSize="13" FontStyle="Italic"  FontStretch="Expanded"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
 
         <Button x:Name="rockBtn" Grid.Row="1" Grid.Column="0" Margin="5" Click="rockBtn_Click">
             <Grid Margin="5">
@@ -29,18 +29,18 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Камень" />
             </Grid>
         </Button>
 
-        <Button x:Name="scissorsBtn" Grid.Row="1" Grid.Column="1" Margin="5">
+        <Button x:Name="scissorsBtn" Grid.Row="1" Grid.Column="1" Margin="5" Click="scissorsBtn_Click">
             <Grid Margin="5">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Ножницы" />
             </Grid>
         </Button>
@@ -51,7 +51,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/paper.png" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Бумага" />
             </Grid>
         </Button>
@@ -68,7 +68,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Камень" />
             </Grid>
         </Label>
@@ -79,7 +79,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Ножницы" />
             </Grid>
         </Label>
@@ -90,7 +90,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/paper.png" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Бумага" />
             </Grid>
         </Label>
@@ -101,7 +101,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Камень" />
             </Grid>
         </Label>
@@ -112,7 +112,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Ножницы" />
             </Grid>
         </Label>
@@ -123,7 +123,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <Image Grid.Row="0" Source="/paper.png" Width="70" Height="70" Margin="0,0,1,0" VerticalAlignment="Bottom" />
                 <TextBlock Grid.Row="1" Text="Бумага" />
             </Grid>
         </Label>
