@@ -1,0 +1,138 @@
+﻿<Window x:Class="RockPaperScissorsUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScissorsUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="ИГРА: КАМЕНЬ, НОЖНИЦЫ, БУМАГА (Сделайте свой выбор)" FontSize="13" FontStyle="Italic"  FontStretch="Expanded"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
+
+        <Button x:Name="rockBtn" Grid.Row="1" Grid.Column="0" Margin="5">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Камень" />
+            </Grid>
+        </Button>
+
+        <Button x:Name="scissorsBtn" Grid.Row="1" Grid.Column="1" Margin="5">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Ножницы" />
+            </Grid>
+        </Button>
+
+        <Button x:Name="paperBtn" Grid.Row="1" Grid.Column="2" Margin="5">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Бумага" />
+            </Grid>
+        </Button>
+
+        <Label Content="Ваш выбор:" Grid.Row="2" Grid.Column="0" />
+
+        <Label Content="Выбор компьютера:" Grid.Row="2" Grid.Column="1" />
+
+        <TextBlock x:Name="resultTextBlock" Text="Результат раунда:" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" />
+
+        <Label x:Name="rockUserLbl" Grid.Row="3" Grid.Column="0" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Камень" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="scissorsUserLbl" Grid.Row="3" Grid.Column="0" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Ножницы" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="paperUserLbl" Grid.Row="3" Grid.Column="0" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Бумага" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="rockCompLbl" Grid.Row="3" Grid.Column="1" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/img/rock_2.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Камень" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="scissorsCompLbl" Grid.Row="3" Grid.Column="1" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/scissors.jpg" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Ножницы" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="paperCompLbl" Grid.Row="3" Grid.Column="1" Visibility="Hidden">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="/paper.png" Width="60" Height="60" Margin="0,0,1,0" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="1" Text="Бумага" />
+            </Grid>
+        </Label>
+
+        <Label x:Name="victoryUserLbl" Content="Кол-во ваших побед:" Grid.Row="4" Grid.Column="0" />
+        
+        <Label x:Name="victoryCompLbl" Content="Кол-во побед компьютера:" Grid.Row="4" Grid.Column="1" />
+        
+        <Label x:Name="drawLbl" Content="Кол-во ничьих:" Grid.Row="4" Grid.Column="2" />
+
+    </Grid>
+</Window>
