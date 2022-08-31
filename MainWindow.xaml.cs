@@ -61,9 +61,9 @@ namespace RockPaperScissorsUI {
 
         private void rockBtn_Click(object sender, RoutedEventArgs e) {
             HidingConten();
-
             rockUserLbl.Visibility = Visibility.Visible;
             GuessingFigure();
+
             switch(figure) {
                 case "Камень":
                 rockCompLbl.Visibility = Visibility.Visible;
@@ -93,9 +93,9 @@ namespace RockPaperScissorsUI {
 
         private void scissorsBtn_Click(object sender, RoutedEventArgs e) {
             HidingConten();
-
             scissorsUserLbl.Visibility = Visibility.Visible;
             GuessingFigure();
+
             switch (figure) {
                 case "Камень":
                 rockCompLbl.Visibility = Visibility.Visible;
@@ -116,6 +116,38 @@ namespace RockPaperScissorsUI {
                 resultTextBlock.Text = "Результат раунда: ВЫ ПОБЕДИЛИ";
                 victory++;
                 victoryUserLbl.Content = $"Кол-во ваших побед: {victory}";
+                break;
+
+                default:
+                break;
+            }
+        }
+
+        private void paperBtn_Click(object sender, RoutedEventArgs e) {
+            HidingConten();
+            paperUserLbl.Visibility = Visibility.Visible;
+            GuessingFigure();
+
+            switch (figure) {
+                case "Камень":
+                rockCompLbl.Visibility = Visibility.Visible;
+                resultTextBlock.Text = "Результат раунда: ВЫ ПОБЕДИЛИ";
+                victory++;
+                victoryUserLbl.Content = $"Кол-во ваших побед: {victory}";
+                break;
+
+                case "Ножницы":
+                scissorsCompLbl.Visibility = Visibility.Visible;
+                resultTextBlock.Text = "Результат раунда: КОМПЬЮТЕР ПОБЕДИЛ";
+                defeat++;
+                victoryCompLbl.Content = $"Кол-во побед компьютера: {defeat}";
+                break;
+
+                case "Бумага":
+                paperCompLbl.Visibility = Visibility.Visible;
+                resultTextBlock.Text = "Результат раунда: НИЧЬЯ";
+                draw++;
+                drawLbl.Content = $"Кол-во ничьих: {draw}";
                 break;
 
                 default:
